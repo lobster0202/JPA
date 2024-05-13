@@ -15,6 +15,7 @@ public class BookRegistServiceTests {
 
     @Autowired
     private BookRegistService bookRegistService;
+
     private static Stream<Arguments> getBook() {
         return Stream.of(
                 Arguments.of(
@@ -27,6 +28,7 @@ public class BookRegistServiceTests {
                 )
         );
     }
+
     @ParameterizedTest
     @MethodSource("getBook")
     void testCreateEmbeddedPriceOfBook(
