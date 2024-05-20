@@ -51,12 +51,17 @@ public class OneToManyServiceTests {
         CategoryDTO categoryInfo = new CategoryDTO(
                 categoryCode, categoryName, null, null
         );
-        List<MenuDTO> menuList = new ArrayList<>();
+
+
         MenuDTO menuInfo = new MenuDTO(
                 menuCode, menuName, menuPrice, categoryCode, orderableStatus
         );
+
+        List<MenuDTO> menuList = new ArrayList<>();
+
         menuList.add(menuInfo);
         categoryInfo.setMenuList(menuList);
+
         //when
         //then
         Assertions.assertDoesNotThrow(

@@ -18,6 +18,4 @@ public class OneToManyRepository {
         entityManager.persist(category);
     }
 
-
-
 }

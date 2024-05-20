@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "tbl_menu")
 public class Menu {
 
-    /* 양방향일 경우 하나는 진짜 연관관계고 하나는 가까 연관관계다.
+    /* 양방향일 경우 하나는 진짜 연관관계고 하나는 가짜 연관관계다.
     * 근데 진짜 연관관계의 주인은 FK를 가진애라고 생각하면 된다.
     * 여기 같은 경우에는 Menu가 진짜 연관관계다. */
     @Id
